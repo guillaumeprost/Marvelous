@@ -1,0 +1,37 @@
+<div class="content col-md-12">
+    <div class=" col-md-12"><h1>Search result : </h1></div>
+    <div class=" col-md-12"><h2>Characters</h2></div>
+    <div class="col-md-12 resume" ng-controller="SearchController">
+        <div class="row">
+            <div class="marvelbox homebox" ng-repeat="hero in characters">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img ng-src="{{ characters.thumbnail.path }}">
+                    </div>
+                    <div class="col-md-10">
+                        <h5>{{hero.name}}</h5>
+
+                        <p>{{hero.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class=" col-md-12"><h2>Comics</h2></div>
+        <div class="col-md-12 resume" ng-controller="SearchController">
+            <div class="row">
+                <div class="marvelbox homebox" ng-repeat="comic in comics">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img ng-src="{{ comic.thumbnail.path }}">
+                        </div>
+                        <div class="col-md-10">
+                            <h5>{{comic.title}}</h5>
+
+                            <p>{{comic.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>

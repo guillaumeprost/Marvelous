@@ -11,6 +11,8 @@ app.factory('Comics', function ($resource) {
     return $resource('http://gateway.marvel.com:80/v1/public/comics?apikey=:apikey', {apikey: apikey});
 });
 
-
+app.factory('CharacterDetails', function ($resource) {
+    return $resource('http://gateway.marvel.com:80/v1/public/characters/'+characterId+'?apikey=:apikey', {apikey: apikey});
+});
 
 

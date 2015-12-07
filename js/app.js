@@ -9,9 +9,13 @@ app.config(function ($routeProvider) {
             controller: 'HomeController',
             templateUrl: 'views/home.html'
         })
-        .when('/search', {
+        .when('/search/:searchWord', {
             controller: 'SearchController',
             templateUrl: 'views/search.html'
+        })
+        .when('/character/:characterId', {
+            controller: 'CharacterDetailsController',
+            templateUrl: 'views/characterDetails.html'
         })
         .otherwise({
             redirectTo: '/'

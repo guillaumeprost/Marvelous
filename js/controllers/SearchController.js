@@ -3,9 +3,11 @@
  */
 app.controller('SearchController', ['$scope','Characters','Comics', '$routeParams', function($scope, Characters,Comics, $routeParams) {
 
+
     var charactersParams = {
         name:$routeParams.searchWord
     };
+
 
     Characters.get(charactersParams,function(data){
         $scope.characters = data.data.results;

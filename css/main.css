@@ -1,6 +1,14 @@
+body{
+    background-color:  #957964 ! important;
+}
+
 .resume{
     overflow-y: scroll;
     height: 500px;
+}
+
+.header-form{
+    margin-top: 20px;
 }
 
 
